@@ -4,6 +4,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
+import { Link } from 'react-router-dom'
 
 const ListingDetailForm = () => {
     return (
@@ -40,7 +41,9 @@ const ListingDetailForm = () => {
                                 </Form.Select>
                             </Col>
                             <Col lg={12}>
-                                <Button variant="primary" className='w-100 rounded-5 listingdetailformbtn border-0'>Book</Button>
+                                <Link to='/preview'>
+                                    <Button variant="primary" className='w-100 rounded-5 listingdetailformbtn border-0'>Book</Button>
+                                </Link>
                             </Col>
                         </Row>
                     </Form>

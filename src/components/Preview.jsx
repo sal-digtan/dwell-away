@@ -17,6 +17,7 @@ import Button from 'react-bootstrap/Button';
 import mapmarker from '../assets/images/mapmarker.png'
 import shareicon from '../assets/images/shareicon.png'
 import Card from 'react-bootstrap/Card';
+import { Link } from 'react-router-dom'
 
 const Preview = () => {
 
@@ -187,7 +188,9 @@ const Preview = () => {
                                 <p className='fw-semibold'>AED 3,666.00</p>
                             </div>
                             <div>
-                                <Button variant='dark' className='w-100 previewcontinuebtn'>Continue</Button>
+                                <Link to='/checkout'>
+                                    <Button variant='dark' className='w-100 previewcontinuebtn'>Continue</Button>
+                                </Link>
                             </div>
                         </Card.Body>
                     </Card>

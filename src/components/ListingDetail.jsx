@@ -12,6 +12,7 @@ import Slider from "react-slick";
 import Button from 'react-bootstrap/Button';
 import detailarrowleft from '../assets/images/detailarrowleft.png'
 import detailarrowright from '../assets/images/detailarrowright.png'
+import { Link } from 'react-router-dom'
 
 const ListingDetail = () => {
 
@@ -52,19 +53,25 @@ const ListingDetail = () => {
                             <div key={1}>
                                 <Image src={detailslider} className='img-fluid' />
                                 <div className='mt-3'>
-                                    <Button variant="dark" className='w-100 booksliderbtn'>Book Now</Button>
+                                    <Link to='/preview'>
+                                        <Button variant="dark" className='w-100 booksliderbtn'>Book Now</Button>
+                                    </Link>
                                 </div>
                             </div>
                             <div key={2}>
                                 <Image src={detailslider} className='img-fluid' />
                                 <div className='mt-3'>
-                                    <Button variant="dark" className='w-100 booksliderbtn'>Book Now</Button>
+                                    <Link to='/preview'>
+                                        <Button variant="dark" className='w-100 booksliderbtn'>Book Now</Button>
+                                    </Link>
                                 </div>
                             </div>
                             <div key={3}>
                                 <Image src={detailslider} className='img-fluid' />
                                 <div className='mt-3'>
-                                    <Button variant="dark" className='w-100 booksliderbtn'>Book Now</Button>
+                                    <Link to='/preview'>
+                                        <Button variant="dark" className='w-100 booksliderbtn'>Book Now</Button>
+                                    </Link>
                                 </div>
                             </div>
                         </Slider>
